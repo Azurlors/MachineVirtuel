@@ -1,13 +1,8 @@
-#ifdef _MSC_VER
-#define _CRT_SECURE_NO_WARNINGS
-#endif
-
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
 #include "Header.h"
 #include <pthread.h>
-#include <SDL2/SDL.h>
 
 char symbole(int tableau[LIGNES][COLONNES], int i, int j) {
 	if (tableau[i][j] == 1) {
@@ -61,6 +56,5 @@ int main(int argc, char* argv[]) {
 	afficher_plateau(tableau);
 	printf("\n");
 
-	SDL_Init(SDL_INIT_VIDEO);
 	return 0;
 }
