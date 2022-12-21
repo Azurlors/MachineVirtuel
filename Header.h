@@ -1,4 +1,4 @@
-#pragmaonce
+#pragma once
 #include <stdio.h>
 #include <stdlib.h>
 #define LIGNES 9
